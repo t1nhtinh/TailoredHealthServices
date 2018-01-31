@@ -1,0 +1,93 @@
+﻿body {
+    background-image:url("https://tau0.files.wordpress.com/2013/02/cascades_cloudy_day_bw.jpg");
+}
+.signup_content{
+    position:relative;
+    float:left;
+    margin-left:28%;
+    font-size:1.3em;
+}
+#names {
+    margin-bottom:10px;
+}
+#usernames {
+    margin-bottom:20px;
+    margin-right:38%;
+    font-size:2.0em;
+    text-align:center;
+}
+#usernames name{
+    margin-bottom:20px;
+    font-size:1.9em;
+}
+#passwords{
+    font-size:1.0em;
+}
+#signup_content_credentials{
+    position:relative;
+    margin-left:30%;
+    margin-top:20%;
+}
+.sign_up_nav {
+    position:absolute;
+    text-align:center;
+    bottom:10%;
+    left:37%;
+}
+#signUpSingle {
+    position:absolute;
+    text-align:center;
+    bottom:10%;
+    left:45%;
+}
+.sign_up_nav a{
+    display:inline-block;
+}
+.back_button {
+    margin-right: 20%;
+    margin-top: 20%;
+}
+.next_button {
+    margin-top: 20%;
+}
+#packages {
+    margin-left:0%;
+    color:black;
+}
+.main h1 {
+    text-align:center;
+    font-size:3em;
+}
+.main {
+    position:relative;
+    overflow:auto;
+    height:500px;
+    width:350px;
+    margin-top:5%;
+    margin-right:auto;
+    margin-left:auto;
+    padding:1%;
+    background:linear-gradient(gray,black);
+    border-style:hidden;
+    border-color:white;
+    border-width:4px;
+    color:white;
+    box-shadow:5px 10px 20px #35383d;
+}
+.head_banner {
+    position:relative;
+    height:200px;
+    max-width:100%;
+    background:black;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    color:white;    
+
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-right: 14px;
+
+    box-shadow:5px 10px 20px #35383d;
+}
