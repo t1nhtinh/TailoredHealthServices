@@ -1,0 +1,164 @@
+﻿body {
+    background-color:white;
+}
+.main_page {
+    position:relative;
+    overflow:hidden;
+}
+.signage {
+    text-align:center;
+}
+.signage h1::after {
+    content:' ';
+    display:block;
+    width:50%;
+    margin-left:23%;
+    border:1px dashed darkgrey;
+}
+#head_banner {
+    text-align:right;
+    position:relative;
+    height:10vh;
+    width:100%;
+    background:black;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    opacity:0.8;
+    color:white;
+
+    margin-top:-8px;
+    margin-left:-8px;
+    padding-right:13px;
+    box-shadow:5px 10px 20px #35383d;
+}
+.left_categories {
+    width:19%;
+    position:relative;
+    float:left;
+    border-right:2px solid grey;
+}
+.middle_categories{
+    width:60%;
+    position:relative;
+    float:left;
+}
+.right_categories{
+    width:19%;
+    position:relative;
+    float:left;
+    border-left:2px solid grey;
+}
+#calorie_corner {
+    width:100%;
+    height:50vh;
+    border-bottom:2px solid black;
+}
+#calorie_meter {
+    width:70%;
+    height:25vh;
+    border-radius:80%;
+    margin:10px auto;
+    border:1px solid black;
+    background-image: linear-gradient(180deg, transparent 50%, green 50%),
+        linear-gradient(-90deg, red 50%, transparent 50%);
+}
+
+#week_goal {
+    width:100%;
+    height:50vh;
+    border-top:2px solid black;
+    box-shadow:5px 10px 20px #35383d;
+}
+
+.tab_nav {
+    width:100%;
+    overflow:hidden;
+}
+
+.tab_nav button {
+    background-color:#555;
+    color:white;
+    float:left;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding: 14px 16px;
+    font-size:2em;
+    width:33%;
+}
+
+.tab_nav button:hover {
+    background-color:#777;
+}
+
+.calendar {
+    text-align:center;
+    max-height:100vh;
+    overflow-y:scroll;
+}
+table.given_calendar {
+    width:100%;
+    border-spacing:15px;
+}
+
+table.given_calendar td{
+    text-align:left;
+    background-color:#dddddd;
+    padding:10px;
+}
+
+table.given_calendar th{
+    height:10vh;
+    text-align:center;
+    background-color:red;
+    color:white;
+}
+
+#doctor_comments {
+    width:109%;
+    height:50vh;
+    border-bottom:2px solid black;
+}
+.table-wrapper {
+    overflow-y:scroll;
+    max-height:60%;
+    border-bottom:2px solid black;
+}
+table.component_table {
+    width:100%;
+    border-spacing:5px;
+}
+table.component_table td{
+    text-align:left;
+    background-color:#dddddd;
+}
+.live_chat{
+    text-align:left;
+    width:109%;
+    height:50vh;
+    border-top:2px solid black;
+    box-shadow:5px 10px 20px #35383d;
+}
+#chat_input {
+    margin-top:2%;
+    margin-bottom:2%;
+    width:80%;
+    height:6vh;
+    border:2px solid black;
+}
+.quote {
+    float:left;
+    margin-top: 4%;
+    border:2px solid yellow;
+    width:75%;
+}
+.contact_photos {
+    margin-top: 3%;
+}
+.contact_photos img {
+    float:left;
+    width:3vw;
+    height:5vh;
+    border-radius:40%;
+}
