@@ -1,0 +1,181 @@
+﻿/**
+
+    https://code.tutsplus.com/tutorials/30-css-best-practices-for-beginners--net-6741 
+    Good CSS practices 
+    1) css reset: allows layout to be consistent in all browsers 
+    2) organize top-down structure 
+        a. generic classes (body, a, p, h1)
+        b. header 
+        c. nav-menu 
+        d. main-content 
+    3) combine elements 
+    4) create HTML first 
+    5) use multiple classes 
+    6) add comments
+    7) block elements: div, h1...h6, p, ul, li, table, blockquote, pre, form 
+    8) inline or block elements: span, a, strong, em, img, br, input, abbr, acronym 
+    9) alphabetize properties 
+    10) css compress 
+    11) to center layouts use margin: 0 auto //top, btm- and left, right values respectively 
+    12) use absolute sparingly 
+    13) use text-transform 
+    14) use ems over pixels to specify font size due to its scalabilty 
+    15) Add margins and paddings to all // * { margin: 0; padding: 0}
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+   /* background: url("../images/background.png");*/
+}
+
+h1 {
+    border-bottom-style: solid;
+    border-bottom-color: black; 
+
+}
+
+
+.carousel {
+    position: relative;
+    /*box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); */
+    margin: auto;
+    width: 90%;
+    height: 40vw;
+    overflow: hidden;
+  
+}
+
+.carousel-inner {
+    position: inherit;
+    margin: auto;
+    width: 90%;
+    height: 40vw;
+    overflow: hidden;
+
+   
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+    align-self:center;
+    margin:auto;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+   
+        
+}
+
+.carousel-item img {
+       display: block;
+       height: auto;
+       max-width: 100%;
+ }
+
+.doctor_intro {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+    .carousel-control.prev {
+        left: 2%;
+    }
+
+    .carousel-control.next {
+        right: 2%;
+    }
+
+    .carousel-control:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #aaaaaa;
+    }
+
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3, 
+#carousel-4:checked ~ .control-4,
+#carousel-5:checked ~ .control-5 {
+    display: block
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+    .carousel-indicators li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+    .carousel-bullet:hover {
+        color: #aaaaaa;
+    }
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet. 
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
+    color: #428bca
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+
+}
