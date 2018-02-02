@@ -1,5 +1,5 @@
 ﻿body {
-    background-color:white;
+    background-color:black;
 }
 .main_page {
     position:relative;
@@ -36,7 +36,7 @@
     width:19%;
     position:relative;
     float:left;
-    border-right:2px solid grey;
+    border-right:2px solid #8d8dd9;
 }
 .middle_categories{
     width:60%;
@@ -47,12 +47,14 @@
     width:19%;
     position:relative;
     float:left;
-    border-left:2px solid grey;
+    border-left:2px solid #8d8dd9;
 }
 #calorie_corner {
     width:100%;
     height:50vh;
     border-bottom:2px solid black;
+    background-color:black;
+    color:white;
 }
 #calorie_meter {
     width:70%;
@@ -67,8 +69,10 @@
 #week_goal {
     width:100%;
     height:50vh;
-    border-top:2px solid black;
+    border-top:2px solid #8d8dd9;
     box-shadow:5px 10px 20px #35383d;
+    background-color:black;
+    color:white;
 }
 
 .tab_nav {
@@ -79,6 +83,8 @@
 .tab_nav button {
     background-color:#555;
     color:white;
+    white-space:nowrap;
+    overflow:hidden;
     float:left;
     border:none;
     outline:none;
@@ -118,7 +124,9 @@ table.given_calendar th{
 #doctor_comments {
     width:109%;
     height:50vh;
-    border-bottom:2px solid black;
+    border-bottom:2px solid #8d8dd9;
+    background-color:black;
+    color:white;
 }
 .table-wrapper {
     overflow-y:scroll;
@@ -137,8 +145,10 @@ table.component_table td{
     text-align:left;
     width:109%;
     height:50vh;
-    border-top:2px solid black;
+    border-top:2px solid #8d8dd9;
     box-shadow:5px 10px 20px #35383d;
+    background-color:black;
+    color:white;
 }
 #chat_input {
     margin-top:2%;
