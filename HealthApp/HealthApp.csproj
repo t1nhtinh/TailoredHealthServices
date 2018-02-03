@@ -114,6 +114,8 @@
     <Content Include="SignUp\package_picker.html" />
     <Content Include="SignUp\SignUp.css" />
     <Content Include="SignUp\signup_basic.html" />
+    <Content Include="TrainerPage\TrainerPage.css" />
+    <Content Include="TrainerPage\trainer_front_page.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

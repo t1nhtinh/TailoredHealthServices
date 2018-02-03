@@ -1,20 +1,12 @@
 ﻿body {
-    background-color:black;
+    background-color:#0c121f;
 }
+
 .main_page {
     position:relative;
     overflow:hidden;
 }
-.signage {
-    text-align:center;
-}
-.signage h1::after {
-    content:' ';
-    display:block;
-    width:50%;
-    margin-left:23%;
-    border:1px dashed darkgrey;
-}
+
 #head_banner {
     text-align:right;
     position:relative;
@@ -24,82 +16,80 @@
     border-style:solid;
     border-width:1px;
     border-color:black;
-    opacity:0.8;
     color:white;
 
     margin-top:-8px;
     margin-left:-8px;
     padding-right:13px;
 }
-.left_categories {
-    width:19%;
-    position:relative;
-    float:left;
-    border-right:2px solid #8d8dd9;
-}
-.middle_categories{
-    width:60%;
-    position:relative;
-    float:left;
-}
-.right_categories{
-    width:19%;
-    position:relative;
-    float:left;
-    border-left:2px solid #8d8dd9;
-}
-#calorie_corner {
-    width:100%;
-    height:50vh;
-    border-bottom:2px solid black;
-    background-color:black;
-    color:white;
-}
-#calorie_meter {
-    width:70%;
-    height:25vh;
-    border-radius:80%;
-    margin:10px auto;
-    border:1px solid black;
-    background-image: linear-gradient(180deg, transparent 50%, green 50%),
-        linear-gradient(-90deg, red 50%, transparent 50%);
-}
 
-#week_goal {
-    width:100%;
-    height:50vh;
-    border-top:2px solid #8d8dd9;
-    background-color:black;
-    color:white;
+.left_half {
+    position:relative;
+    width:34%;
+    float:left;
 }
-
+#info_list {
+    max-height:50vh;
+}
 .tab_nav {
     width:100%;
     overflow:hidden;
+    margin-left:5%;
 }
 
 .tab_nav button {
     background-color:#373a3f;
     color:white;
     white-space:nowrap;
-    overflow:hidden;
     float:left;
     border:none;
     outline:none;
     cursor:pointer;
     padding: 14px 16px;
-    font-size:2em;
-    width:33%;
+    font-size:1.5em;
+    width:43%;
 }
 
 .tab_nav button:hover {
     background-color:#777;
 }
 
+.middle_half {
+    position:relative;
+    width:44%;
+    float:left;
+    border-left:1vw solid #2a3345;
+    border-right:1vw solid #2a3345;
+}
+
+#current_client {
+    text-align:center;
+    background-color:#373a3f;
+    color:white;
+    white-space:nowrap;
+    float:left;
+    border-bottom:1px solid white;
+    outline:none;
+    cursor:pointer;
+    padding: 14px 16px;
+    font-size:1.5em;
+    width:43%;
+    margin-left:18%;
+}
 .calendar {
     text-align:center;
     max-height:100vh;
     overflow-y:scroll;
+}
+
+#client_search {
+    width: 80%; 
+    border: 1px solid #ddd;
+    margin: 4% auto; 
+}
+
+#info_content {
+    max-height:50vh;
 }
 table.given_calendar {
     width:100%;
@@ -118,14 +108,6 @@ table.given_calendar th{
     background-color:#44646e;
     color:white;
 }
-
-#doctor_comments {
-    width:109%;
-    height:50vh;
-    border-bottom:2px solid #8d8dd9;
-    background-color:black;
-    color:white;
-}
 .table-wrapper {
     overflow-y:scroll;
     max-height:60%;
@@ -139,33 +121,65 @@ table.component_table td{
     text-align:left;
     background-color:#15212b;
 }
-.live_chat{
+
+.right_half {
+    position:relative;
+    width:18%;
+    float:left;
+}
+
+.client_name {
+    text-align:center;
+    color:black;
+    white-space:nowrap;
+    float:left;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width:100%;
+    padding:5%;
+}
+
+button.client_name:hover {
+    background-color:#777;
+}
+
+button.client_name:focus{
+    background-color:red;
+}
+
+.live_chat {
+    position:relative;
     text-align:left;
-    width:109%;
-    height:50vh;
+    width:100%;
+    height:30vh;
     border-top:2px solid #8d8dd9;
     background-color:black;
     color:white;
 }
 #chat_input {
-    margin-top:2%;
-    margin-bottom:2%;
-    width:80%;
-    height:6vh;
+    margin-top:1%;
+    margin-left:2%;
+    width:70%;
+    height:7vh;
     border:2px solid black;
 }
-.quote {
+.live_text_enter {
+    position:relative;
     float:left;
-    margin-top: 4%;
-    border:2px solid yellow;
-    width:75%;
+}
+.contacts {
+    position:relative;
+    float:left;
+    clear:left;
 }
 .contact_photos {
     margin-top: 3%;
 }
 .contact_photos img {
     float:left;
-    width:3vw;
-    height:5vh;
+    width:2vw;
+    height:4vh;
     border-radius:40%;
 }
+
