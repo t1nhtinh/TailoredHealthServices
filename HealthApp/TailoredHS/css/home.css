@@ -78,15 +78,72 @@ h1 {
        max-width: 100%;
  }
 
-.doctor_intro {
+.card_info {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px
+    display:inline-block;
+    top:20%;
+    right: 20%; 
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    padding:10px;
+    width:20%;
+    height: 50%;
+    overflow:hidden;
 }
+
+.card_info a  {
+    position:absolute;
+    bottom: 5%; 
+    background-color: #428bca;
+    color: black;
+    text-decoration:none;
+    text-align: center;
+    padding: 5px;
+    width:80%;
+    margin:inherit;
+
+}
+
+.card_info2 {
+    position: absolute;
+    display: inline-block;
+    top: 20%;
+    right: 20%;
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    padding: 10px;
+    width: 20%;
+    height: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+
+}
+
+.card_info2 a {
+    position: absolute;
+    bottom: 5%;
+    background-color: #428bca;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    width: 80%;
+    margin: inherit
+
+}
+
+.more_info {
+    position: absolute;
+    bottom: 5%;
+    background-color: #428bca;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+
+}
+
 
 .carousel-control {
     background: rgba(0, 0, 0, 0.28);
@@ -154,14 +211,14 @@ h1 {
     font-size: 35px;
 }
 
-    .carousel-bullet:hover {
-        color: #aaaaaa;
-    }
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet. 
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet, 
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
     color: #428bca
 }
@@ -178,4 +235,142 @@ h1 {
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 
+}
+
+
+.row {
+    /*content: "";
+    display: table;
+    clear: both;*/
+    margin-top: 20px;
+    padding-top: 20px;
+
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: black;
+    text-align: center;
+
+    background-color: white; 
+
+}
+
+.left_column {
+    background-color: white;
+    float: left;
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    margin-left:10%;
+
+}
+
+/*#f1f1f1*/
+.right_column {
+    background-color: white;
+    float: left;
+    height: auto;
+    padding: 20px;
+    width: 20%;
+    margin-right: 10%;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+/*.left_column {
+    background-color: aliceblue;
+    float: left;
+    height: 20vh;
+    padding: 0;
+    width: 60%;
+    margin-top: 20px
+
+}
+
+#f1f1f1
+.right_column {
+    background-color: black;
+    float: left;
+    height: 20vh;
+    padding: 20px;
+    width: 20%;
+    margin-top: 20px
+}*/
+
+
+.card {
+    background-color: rgba(0, 173, 248, 0.1);
+    padding: 10px;
+    text-align: right;
+
+}
+
+.card_one {
+    background-color: rgba(241, 241, 241, 1);
+    padding: 10px;
+    text-align: left;
+
+}
+
+.card_two {
+    background-color: rgba(241, 241, 241, 1);
+    padding: 10px;
+    text-align:right;
+
+}
+
+
+.card_three {
+    width: 100%;
+    height: 100%;
+    background-color:yellow;
+
+}
+
+.card_three  img {
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+
+
+.card_four {
+    width: 100%;
+    height: 25%;
+  
+}
+.card_four img {
+    width: 25%;
+    height: 100px;
+    float: right;
+}
+
+/*.header_title h1 img {
+    width = 100;
+    height = 100;
+
+}*/
+
+@media (max-width: 800px) {
+    .left_column, .right_column {
+        width: 100%;
+        padding: inherit;
+        margin: inherit
+    }
+
+    .card_info {
+        overflow-y: scroll
+    }
+
+        .card_info a {
+            display: none
+        }
+
+    .card_info2 a {
+        display: none
+    }
+
+    .header_title img {
+        padding: inherit;
+        margin: inherit;
+    }
 }

@@ -15,10 +15,18 @@
     11) learn all htm tags: abbr(abbreviate), cite(reference)
     12) align all elements on page
     13) slide a PSD(photoshoop design file)
+
+    TODO: 
+    1) Client Login, Provider Login, Client Sign Up Provider Sign up 
+    2) center text description within carasel
+    3) "Learn More" buttons
+    4) Program description and picture - twitter style
+    5) make images fit carasel no matter what screen size 
+    6) Run validity
     -->
 <html>
     <head>
-        <meta charset="utf-8" />
+        
         <title>Tailored Health Services</title>
         <!-- TODO: Places stylesheets here  -->
         <link rel="stylesheet" type="text/css" media="screen" href="../css/home.css" />
@@ -27,13 +35,32 @@
 <body>
 
     <!--fix header: Align login with slides and make box frames for them -->
-
-
-
+    <div class="header">
+        <div class="menu_login_container" style="position: absolute; top: 0; right: 0;">
+            <form action="#">
+                <table>
+                    <tr>
+                        <td><label for="email">Email or Username</label></td>
+                        <td><label for="pwd">Password</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="userid" id="email"></td>
+                        <td><input type="password" name="pwd" id="pwd"></td>
+                        <td><input type="submit" value="Log In" /></td>
+                        <td><input type="submit" value="Sign Up" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="#">Forgot account?</a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
 
     <div class=header_title>
         <h1 style="text-align:center;">
-            <img src="../images/suit1.png" alt="suit" width="100" height="100" align="bottom" /> Tailored Health Services
+            <img src="../images/suit1.png" alt="suit" width="100" height="100" /> Tailored Health Services
         </h1>
     </div>
 
@@ -102,8 +129,9 @@
 
                 <img src="../images/health.jpg" alt="Docters" />
 
-                <div class="doctor_intro">
+                <div class="card_info">
                     <p>To ensure your safety, we Suit you with the our Team of Doctors.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
 
@@ -111,24 +139,29 @@
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
                 <img src="../images/weightTraining.jpg" alt="Personal Trainers" />
-                <div class="doctor_intro">
+                <div class="card_info">
                     <p>Train with world-renowned fitness coaches. </p>
+
+                    <a href="#">Learn More</a>
                 </div>
             </div>
 
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
                 <img src="../images/marathon3.jpg" alt="Marathon Runner" />
-                <div class="doctor_intro">
+                <div class="card_info">
                     <p>Training for a marathon? We got you covered! </p>
+                    <a href="#">Learn More</a>
+
                 </div>
             </div>
 
             <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item">
                 <img src="../images/physicalTherapist.jpg" alt="Physical Therapist" />
-                <div class="doctor_intro">
+                <div class="card_info">
                     <p>Injured?? Physical Therapists are here to help you back to recovery. </p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
 
@@ -137,9 +170,11 @@
                 <img src="../images/jt3.jpg" alt="JT selection" />
 
             
-                <div class="doctor_intro">
+                <div class="card_info2">
                     <p>Our Suit of Programs Tailored to your Health Needs</p>
+                    <a href="#">Learn More</a>
                 </div>
+               
             </div>
 
             <label for="carousel-5" class="carousel-control prev control-1">‹</label>
@@ -164,22 +199,159 @@
         </div>
     </div>
 
+    <div class="row">
+        <h2>"Solutions that Suit your Health Needs"</h2>
+        <div class="left_column">
 
- 
 
-    <h6>Description.... of company </h6>
+       
+            <div class="card_one">
+                <h3>Strength Training</h3>
+                <!--<img src="../images/weights4.png" alt="weights" />-->
+                <p>
+                    This is a desciption. This is a desciption. This is a desciption.
+                    This is a desciption.This is a desciption.This is a desciption.
+                    This is a desciption. This is a desciption.
+                    This is a desciption.
+                </p>
+               
 
-    <h3>Fitness Training</h3>
-    <h6>Description.... </h6>
-    <h3>Physical Therapy</h3>
-    <h6>Description.... </h6>
-    <h3>Train for a Marathon</h3>
-    <h6>Description.... </h6>
-    <div class="description_container">
 
-    </div>
+            </div>
 
-    <div style="float: right; ">
+            <div class="card">
+               
+                    <h3>Weight Loss</h3>
+                    <!--<img src="../images/weightLoss.jpg" alt="weight loss" />-->
+                    <p>
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                    </p>
+             
+
+            </div>
+           
+                <div class="card_one">
+                    <h3>Physical Therapy</h3>
+                    <!--<img src="../images/physicaltherapy2.png" alt="physical therapy" />-->
+                    <p>
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                    </p>
+                </div>
+
+           
+
+            <div class="card">
+                
+                    <h3>Train for a Marathon</h3>
+
+                    <p>
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                    </p>
+             
+                    <!--<img src="../images/marathon1.png" alt="marathon" />-->
+                </div>
+            </div>
+       
+            <div class="right_column">
+                <h3>Mission</h3>
+                <div class="card_one">
+                    <p>
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+            <!--<div class="card_two">
+                <div class="card_four">
+                    <h3>Weight Loss</h3>
+                    <img src="../images/weightLoss.jpg" alt="weight loss" />
+                </div>
+                <p>
+                    This is a desciption. This is a desciption. This is a desciption.
+                    This is a desciption.This is a desciption.This is a desciption.
+                    This is a desciption. This is a desciption.
+                    This is a desciption. This is a desciption. This is a desciption. This is a desciption.
+                    This is a desciption.This is a desciption.This is a desciption.
+                    This is a desciption. This is a desciption.
+                    This is a desciption. This is a desciption. This is a desciption. This is a desciption.
+                    This is a desciption.This is a desciption.This is a desciption.
+                    This is a desciption. This is a desciption.
+                    This is a desciption.
+                </p>
+            </div>
+
+            <div class="card_one">
+                <div class="card_three">
+                    <h3>Physical Therapy</h3>
+                    <img src="../images/physicaltherapy2.png" alt="physical therapy" />
+                    <p>
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption. This is a desciption. This is a desciption. This is a desciption.
+                    This is a desciption.This is a desciption.This is a desciption.
+                    This is a desciption. This is a desciption.
+                    This is a desciption.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card_two">
+                
+                <div class="card_four">
+   
+                    <h3>Train for a Marathon</h3>
+                
+                    <img src="../images/marathon1.png" alt="marathon" />
+
+                    <p>
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                        This is a desciption. This is a desciption. This is a desciption.
+                        This is a desciption.This is a desciption.This is a desciption.
+                        This is a desciption. This is a desciption.
+                        This is a desciption.
+                    </p>
+                </div>
+
+               
+            </div>-->
+
+       
+
+
+          <!--<div class="right_column">
+
+
+        </div>-->
+
+   
+
+
+
+    <!--<div style="float: right; ">
         <form action="">
             <table cellspacing="5">
                 <tr>
@@ -207,14 +379,14 @@
                             <td><input type="submit" value="Log In" /></td>
                             <td><input type="submit" value="Sign Up" /></td>
                         </tr>
-                        <!-- <tr>
+                         <tr>
                         <td></td>
                         <td><a href="#">Forgot account?</a></td>
-                    </tr>        -->
+                    </tr>        
                     </table>
                 </form>
             </div>
-        </div>
+        </div>-->
 
     <!-- TODO: Place Javascript Files here  -->
 </body>
