@@ -37,7 +37,7 @@
     <!--fix header: Align login with slides and make box frames for them -->
     <div class="header">
         <div class="menu_login_container" style="position: absolute; top: 0; right: 0;">
-            <form action="#">
+            <form action="../../ClientPage/client_front_page.html">
                 <table>
                     <tr>
                         <td><label for="email">Email or Username</label></td>
@@ -46,12 +46,21 @@
                     <tr>
                         <td><input type="email" name="userid" id="email"></td>
                         <td><input type="password" name="pwd" id="pwd"></td>
-                        <td><input type="submit" value="Log In" /></td>
-                        <td><input type="submit" value="Sign Up" /></td>
+                        <td><input type="submit" value="Client Log In" /></td>
                     </tr>
+                </table>
+            </form>
+            <form action="../../TrainerPage/trainer_front_page.html" style="float:right;">
+                <table>
                     <tr>
-                        <td></td>
-                        <td><a href="#">Forgot account?</a></td>
+                        <td><input type="submit" value="Trainer Login" /></td>
+                    </tr>
+                </table>
+            </form>
+            <form action="../../SignUp/signup_basic.html" style="float:right; clear:right;">
+                <table>
+                    <tr>
+                        <td><input type="submit" value="Sign Up" /></td>
                     </tr>
                 </table>
             </form>
