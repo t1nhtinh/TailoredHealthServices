@@ -63,10 +63,33 @@ input[type=text] {
 }
 
 .left_half {
-    width:34%;
+    width:22%;
     float:left;
 }
 .left_half::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+.middle_half {
+    width:48%;
+    float:left;
+    border-left:4vw solid #2a3345;
+    border-right:4vw solid #2a3345;
+}
+
+.middle_half::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+.right_half {
+    width:21%;
+    float:left;
+}
+.right_half::after{
     content:"";
     clear:both;
     display:table;
@@ -85,6 +108,7 @@ input[type=text] {
     width:100%;
     overflow:hidden;
     margin-left:5%;
+    margin-bottom:2%;
 }
 .tab_nav::after{
     content:"";
@@ -109,18 +133,6 @@ input[type=text] {
     background-color:#777;
 }
 
-.middle_half {
-    width:44%;
-    float:left;
-    border-left:1vw solid #2a3345;
-    border-right:1vw solid #2a3345;
-}
-
-.middle_half::after{
-    content:"";
-    clear:both;
-    display:table;
-}
 
 #current_client {
     text-align:center;
@@ -135,11 +147,12 @@ input[type=text] {
     font-size:1.5em;
     width:43%;
     margin-left:18%;
+    margin-top:2%;
 }
 .calendar {
     text-align:center;
     max-height:100vh;
-    overflow-y:scroll;
+    overflow-y:auto;
 }
 .calendar::after {
     content:"";
@@ -179,7 +192,7 @@ table.given_calendar th{
     color:white;
 }
 .table-wrapper {
-    overflow-y:scroll;
+    overflow-y:auto;
     max-height:60%;
     border-bottom:2px solid black;
 }
@@ -192,15 +205,6 @@ table.component_table td{
     background-color:#15212b;
 }
 
-.right_half {
-    width:18%;
-    float:left;
-}
-.right_half::after{
-    content:"";
-    clear:both;
-    display:table;
-}
 
 .client_name {
     text-align:center;
