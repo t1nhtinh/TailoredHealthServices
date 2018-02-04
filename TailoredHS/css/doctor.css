@@ -11,6 +11,12 @@ header {
 
 }
 
+table {
+
+    display: block; 
+    border: 1px solid black; 
+    text-align:center;
+}
 header img{
     height:20vw;
     width:60%;   
@@ -137,13 +143,13 @@ ul.sidenav li a:hover:not(.active) {
 }
 /*rgba(182, 187, 191, 0.1)*/
 
-  .card {
+ .card {
     background-color: rgba(0, 173, 248, 0.1);
     padding: 10px;
     margin-top: 20px;
     border-top-style: solid;
     border-top-width: 5px;
-    border-top-color: #2196F3
+    border-top-color: #2196F3;
 
 }
 
