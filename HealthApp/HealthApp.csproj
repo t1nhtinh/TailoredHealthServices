@@ -111,7 +111,8 @@
   <ItemGroup>
     <Content Include="AnotherPage.html" />
     <Content Include="index.html" />
-    <Content Include="SignUp\package_picker.html" />
+    <Content Include="SignUp\financial.html" />
+    <Content Include="SignUp\medical_info.html" />
     <Content Include="SignUp\SignUp.css" />
     <Content Include="SignUp\signup_basic.html" />
     <Content Include="TrainerPage\TrainerPage.css" />
@@ -120,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SignUp\resources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

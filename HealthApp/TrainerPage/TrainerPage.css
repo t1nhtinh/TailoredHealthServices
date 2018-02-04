@@ -1,10 +1,43 @@
 ﻿body {
     background-color:#0c121f;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.signage {
+    text-align:center;
+}
+
+input[type=submit] {
+    background-color:#456b6b;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border:none;
+    cursor:pointer;
+}
+
+input[type=button] {
+    padding: 6px 10px;
+    background-color:#456b6b;
+    box-sizing: border-box;
+    border:none;
+    cursor:pointer;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2% 0;
+    box-sizing: border-box;
 }
 
 .main_page {
     position:relative;
     overflow:hidden;
+}
+.main_page::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 
 #head_banner {
@@ -22,11 +55,28 @@
     margin-left:-8px;
     padding-right:13px;
 }
+@media (max-width: 800px) {
+    .main_page >div.left_half, .main_page> div.middle_half, .main_page>div.right_half {   
+        width: 100%; 
+        padding: 0;
+    }
+}
 
 .left_half {
-    position:relative;
     width:34%;
     float:left;
+}
+.left_half::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+#week_goal {
+    width:100%;
+    height:50vh;
+    border-top:1vw solid #2a3345;
+    background-color:black;
+    color:white;
 }
 #info_list {
     max-height:50vh;
@@ -35,6 +85,11 @@
     width:100%;
     overflow:hidden;
     margin-left:5%;
+}
+.tab_nav::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 
 .tab_nav button {
@@ -55,11 +110,16 @@
 }
 
 .middle_half {
-    position:relative;
     width:44%;
     float:left;
     border-left:1vw solid #2a3345;
     border-right:1vw solid #2a3345;
+}
+
+.middle_half::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 
 #current_client {
@@ -81,6 +141,11 @@
     max-height:100vh;
     overflow-y:scroll;
 }
+.calendar::after {
+    content:"";
+    clear:both;
+    display:table;
+}
 
 #client_search {
     width: 80%; 
@@ -99,7 +164,12 @@ table.given_calendar {
 table.given_calendar td{
     text-align:left;
     background-color:#dddddd;
-    padding:10px;
+    padding-top:5%;
+}
+
+table.given_calendar td::after {
+    content:"";
+    clear:both;
 }
 
 table.given_calendar th{
@@ -123,9 +193,13 @@ table.component_table td{
 }
 
 .right_half {
-    position:relative;
     width:18%;
     float:left;
+}
+.right_half::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 
 .client_name {
@@ -136,8 +210,16 @@ table.component_table td{
     border:none;
     outline:none;
     cursor:pointer;
-    width:100%;
     padding:5%;
+    margin-bottom:1%;
+    font-size:1.2em;
+    width:100%;
+}
+
+.client_name::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 
 button.client_name:hover {
@@ -145,7 +227,7 @@ button.client_name:hover {
 }
 
 button.client_name:focus{
-    background-color:red;
+    background-color:#2b69c5;
 }
 
 .live_chat {
@@ -153,15 +235,21 @@ button.client_name:focus{
     text-align:left;
     width:100%;
     height:30vh;
-    border-top:2px solid #8d8dd9;
+    border-top:1vw solid #2a3345;
     background-color:black;
     color:white;
+}
+
+.live_chat::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 #chat_input {
     margin-top:1%;
     margin-left:2%;
     width:70%;
-    height:7vh;
+    height:6vh;
     border:2px solid black;
 }
 .live_text_enter {
@@ -173,13 +261,25 @@ button.client_name:focus{
     float:left;
     clear:left;
 }
+
+.contacts::after{
+    content:"";
+    clear:both;
+    display:table;
+}
 .contact_photos {
     margin-top: 3%;
+}
+.contact_photos::after{
+    content:"";
+    clear:both;
+    display:table;
 }
 .contact_photos img {
     float:left;
     width:2vw;
     height:4vh;
     border-radius:40%;
+    cursor:pointer;
 }
 
