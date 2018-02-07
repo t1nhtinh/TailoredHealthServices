@@ -10,6 +10,11 @@ header {
     background: white
 
 }
+.menu_login_container::after {
+    content:"";
+    clear:both;
+    display:table;
+}
 
 table {
 
