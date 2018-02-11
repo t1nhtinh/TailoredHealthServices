@@ -57,7 +57,7 @@ input[type=text] {
     padding-right:13px;
 }
 .left_categories {
-    width:19%;
+    width:18%;
     position:relative;
     float:left;
 }
@@ -67,11 +67,11 @@ input[type=text] {
     display:table;
 }
 .middle_categories{
-    width:60%;
+    width:55%;
     position:relative;
     float:left;
-    border-left:1vw solid #2a3345;
-    border-right:1vw solid #2a3345;
+    border-left:4vw solid #2a3345;
+    border-right:4vw solid #2a3345;
 }
 .right_categories{
     width:18%;
