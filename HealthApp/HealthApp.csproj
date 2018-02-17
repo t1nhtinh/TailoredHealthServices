@@ -97,6 +97,7 @@
     <Content Include="ClientPage\ClientJS.js" />
     <Content Include="ClientPage\ClientPage.css" />
     <Content Include="ClientPage\client_front_page.html" />
+    <Content Include="Messenger\messenger.js" />
     <Content Include="SignUp\credential_creation.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

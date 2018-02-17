@@ -249,6 +249,7 @@ table.component_table td{
     display:table;
 }
 .contact_photos img {
+    cursor: pointer;
     float:left;
     width:3vw;
     height:5vh;

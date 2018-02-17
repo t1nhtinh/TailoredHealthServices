@@ -182,77 +182,23 @@
                     <h1>Live Chat</h1>
                 </div>
                 <div class="table-wrapper">
-                    <table class="component_table">
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                        <tr>
-                            <td>Do you know da weh</td>
-                        </tr>
-                    </table>
+                    <table id="live_table" class="component_table"></table>
                 </div>
                 <div class="live_text_enter">
                     <form>
                         <input id="chat_input" type="text" placeholder="Enter message" name="live_text" />
-                        <input type="button" name="send_but" value="Send" />
+                        <input type="button" onclick="send_message()" name="send_but" value="Send" />
                     </form>
                 </div>
                 <div class="contacts">
                     <div class="contact_photos">
-                        <img src="https://78.media.tumblr.com/avatar_b5af1279b166_128.pnj" alt="client" />
-                        <img src="https://a.wattpad.com/useravatar/-Rick-SanchezC137-.128.143650.jpg" alt="doctor" />
+                        <img onclick="setWho('client')" src="https://78.media.tumblr.com/avatar_b5af1279b166_128.pnj" alt="client" />
+                        <img onclick="setWho('doctor')" src="https://a.wattpad.com/useravatar/-Rick-SanchezC137-.128.143650.jpg" alt="doctor" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../Messenger/messenger.js"></script>
 </body>
 </html>
