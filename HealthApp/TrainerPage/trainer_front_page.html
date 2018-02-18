@@ -95,68 +95,61 @@
                 <button class="tablinks">Food Log</button>
             </div>
             <div class="calendar">
-                <table class="given_calendar">
+                <table id="main_calendar"class="given_calendar">
                     <tr>
                         <th> Monday </th>
                     </tr>
-                    <tr>
-                        <td> Work out: and time</td>
+                    <tr hidden id="mon">
                     </tr>
                     <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                    <tr>
-                        <td> Work out: and time</td>
+                        <td>
+                            <input id="mon_input" type="text" placeholder="Enter workout" />
+                            <input type="button" onclick="createTrainingNode('mon','mon_input')" value="Create" />
+                        </td>
                     </tr>
                     <tr>
                         <th> Tuesday </th>
                     </tr>
-                    <tr>
-                        <td> Work out: and time</td>
+                    <tr hidden id="tue">
                     </tr>
                     <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                    <tr>
-                        <td> Work out: and time</td>
+                        <td>
+                            <input id="tue_input" type="text" placeholder="Enter workout" />
+                            <input type="button" onclick="createTrainingNode('tue','tue_input')" value="Create" />
+                        </td>
                     </tr>
                     <tr>
                         <th> Wednesday</th>
                     </tr>
+                    <tr hidden id="wed">
                     <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                    <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                    <tr>
-                        <td> Work out: and time</td>
+                        <td>
+                            <input id="wed_input" type="text" placeholder="Enter workout" />
+                            <input type="button" onclick="createTrainingNode('wed','wed_input')" value="Create" />
+                        </td>
                     </tr>
                     <tr>
                         <th> Thursday </th>
                     </tr>
+                    <tr hidden id="thur">
                     <tr>
-                        <td> Work out: and time</td>
-                    </tr>
                     <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                    <tr>
-                        <td> Work out: and time</td>
+                        <td>
+                            <input id="thur_input" type="text" placeholder="Enter workout" />
+                            <input type="button" onclick="createTrainingNode('thur','thur_input')" value="Create" />
+                        </td>
                     </tr>
                     <tr>
                         <th> Friday </th>
                     </tr>
+                    <tr hidden id="fri">
                     <tr>
-                        <td> Work out: and time</td>
+                        <td>
+                            <input id="fri_input" type="text" placeholder="Enter workout" />
+                            <input type="button" onclick="createTrainingNode('fri','fri_input')" value="Create" />
+                        </td>
                     </tr>
-                    <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                    <tr>
-                        <td> Work out: and time</td>
-                    </tr>
-                </table>
+               </table>
             </div>
         </div>
         <div class="right_half">
@@ -200,5 +193,6 @@
         </div>
     </div>
     <script src="../Messenger/messenger.js"></script>
+    <script src="../Calendars/Calendars.js"></script>
 </body>
 </html>

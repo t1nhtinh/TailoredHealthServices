@@ -18,7 +18,7 @@ function displayTable() {
     else {
         var cur = JSON.parse(curTable);
         for (i = 0; i < cur.length; i++) {
-            console.log(cur[i]);
+          //  console.log(cur[i]);
             tableHandle.insertRow(-1).insertCell(0).innerHTML = cur[i];
         }
     }
@@ -30,9 +30,9 @@ function cacheChatTable () {
     for (i = 0; i < tableHandle.rows.length; i++) {
         tableArr[tableArr.length] = tableHandle.rows[i].cells[0].innerHTML;
     }
-    for (i = 0; i < tableArr.length; i++) {
-        console.log(tableArr[i]);
-    }
+    //for (i = 0; i < tableArr.length; i++) {
+    //    console.log(tableArr[i]);
+    //}
     determineTable(whoDis, toWho);
     localStorage.setItem(message_p1+"/"+message_p2, JSON.stringify(tableArr));
 }
@@ -57,7 +57,7 @@ function add2live(message) {
 
     var newRow = table.insertRow(-1);
     var cell = newRow.insertCell(0);
-    cell.innerHTML = message;
+    cell.innerHTML = whoDis + ": " + message;
     cacheChatTable();
 }
 function setWho(who) {

@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Calendars\Calendars.js" />
     <Content Include="ClientPage\ClientJS.js" />
     <Content Include="ClientPage\ClientPage.css" />
     <Content Include="ClientPage\client_front_page.html" />
