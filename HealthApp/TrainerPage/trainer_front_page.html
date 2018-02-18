@@ -154,19 +154,19 @@
         </div>
         <div class="right_half">
             <div id="info_content" class="calendar">
-                <input type="text" id="client_search" placeholder="Search for names..">
-                <table class="given_calendar">
+                <input type="text" id="client_search" onkeyup="searchTable()" placeholder="Search for names..">
+                <table id="client_list" class="given_calendar">
                     <tr>
                         <th> Client List </th>
                     </tr>
                     <tr>
-                        <td> <button class="client_name">Guy Fieri</button> </td>
+                        <td> Guy Fieri </td>
                     </tr>
                     <tr>
-                        <td> <button class="client_name">Peter Griffin</button> </td>
+                        <td> Peter Griffin </td>
                     </tr>
                     <tr>
-                        <td> <button class="client_name">Brian</button> </td>
+                        <td> Brian </td>
                     </tr>
                 </table>
             </div>
@@ -194,5 +194,6 @@
     </div>
     <script src="../Messenger/messenger.js"></script>
     <script src="../Calendars/Calendars.js"></script>
+    <script src="ClientSearch.js"></script>
 </body>
 </html>

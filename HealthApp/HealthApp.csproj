@@ -168,6 +168,7 @@
     <Content Include="TailoredHS\images\weights4.png" />
     <Content Include="TailoredHS\images\weightTraining.jpg" />
     <Content Include="TailoredHS\images\weightTraining2.jpeg" />
+    <Content Include="TrainerPage\ClientSearch.js" />
     <Content Include="TrainerPage\TrainerPage.css" />
     <Content Include="TrainerPage\trainer_front_page.html" />
     <Content Include="Web.config" />
