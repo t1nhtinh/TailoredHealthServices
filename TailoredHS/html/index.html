@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+
+<!-- Good HTML Coding practices
+    https://code.tutsplus.com/tutorials/30-html-best-practices-for-beginners--net-4957
+    1) No inline stylesheets or javascripts files
+    2) use h1-h6 for (SEO purposes replace p with h6 tag)
+    3) keep tags lowercase
+    4) valide validate validate markup
+    5) wrap navigation with unordered list
+    6) target IE 7
+    7) once website is complete compress css and javascript files
+    8) all images require alt attribute
+    9) style all elements (geared towards clients)
+    10) learn photo shop
+    11) learn all htm tags: abbr(abbreviate), cite(reference)
+    12) align all elements on page
+    13) slide a PSD(photoshoop design file)
+
+    TODO: 
+    1) Client Login, Provider Login, Client Sign Up Provider Sign up 
+    2) center text description within carasel
+    3) "Learn More" buttons
+    4) Program description and picture - twitter style
+    5) make images fit carasel no matter what screen size 
+    6) Run validity
+    -->
+<html>
+    <head>
+        
+        <title>Tailored Health Services</title>
+        <!-- TODO: Places stylesheets here  -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/home.css" />
+    </head>
+
+    <body>
+
+    <!--
+        HTML & CSS TODO:
+        X1a)Add 3 buttons and design Doctor(Provider), Trainer, Client Login
+        1b) After Login, create page so Home page is set to already logged in w/user signed in!  
+        2) Doctor/Provider Sign up Page
+            a) include documents/certifications
+            b)specialization (Doctor, Physical Therapist)
+        X3) Fix scale of images so they fit to any size screen for slide show!!!! 
+        4) Forget Passwords page
+        5) "Learn More" div box alignment, make absolute bottom center in parent div
+        6) Create 4 divs with package intro and "Learn More" 
+        X7) validate CSS
+        X8) add pictures to description
+        9) Add actual description
+        10) Contact Us https://www.w3schools.com/howto/howto_css_contact_section.asp
+
+        JS TODO: 
+        X1) clicking Learnmore brings to specifc package
+        2) MAYBE add slideshow!!! Check out W3school on this
+            https://www.w3schools.com/howto/howto_js_slideshow.asp
+        3) Forgot account??? Pop up page
+        4) Sign In Form Pop up
+       
+    -->
+
+
+
+    <!--fix header: Align login with slides and make box frames for them -->
+  
+
+    <!-- LOGOS
+       1.  Solutions that Suit your Health Needs
+       2. Solutions that Suit your Health Goals
+       3. Suit Up!!!
+       4.  ***Train for a lifestyle that Suits you***
+       5. A lifestyle that suits you
+       6. Solutions that Suit your Health Best
+    -->
+       
+        <!--<header>-->
+        <div class="header">
+
+            <div class="dummy_container">               
+            </div>
+
+
+            <div class="menu_login_container">
+
+               
+                    <table width="100%">
+                        <tr>
+                            <td><label for="email">Email or Username</label></td>
+                            <td><label for="pwd">Password</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="userid" id="email"></td>
+                            <td><input type="password" name="pwd" id="pwd"></td>
+                            <td><form id="page_select"> <input type="submit" value="Log In" onclick="selectPage()"></form></td>
+                            <td><form><input type="submit" value="Sign Up"></form></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--https://www.w3schools.com/howto/howto_custom_select.asp-->
+                                <form >
+                                    <select id="account_type">
+                                        <option value="0">Select account...</option>
+                                        <option value="1">Patient</option>
+                                        <option value="2">Provider</option>
+                                        <option value="3">Doctor</option>
+                                    </select>
+                                </form>
+
+                            </td>
+                            <td><a href="#">Forgot account?</a></td>
+                        </tr>
+                    </table>
+               
+            </div>
+
+            <div class="title">
+                <h1>
+                    <img src="../images/suit1.png" alt="suit" width="100" height="100"  /> Tailored Health Services
+                </h1>
+            </div>
+
+            <!--</header>-->
+        </div>
+
+
+    <!-- 
+        https://codepen.io/SitePoint/pen/MyPVdK
+        https://www.experts-exchange.com/articles/14861/Build-a-Pure-CSS3-Slideshow-no-javascript-here.html
+        http://qnimate.com/creating-a-slider-using-html-and-css-only/
+        -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+
+            <div class="carousel-item">
+
+                <img src="../images/health.jpg" alt="Docters" />
+
+                <div class="card_info">
+                    <p>To ensure your safety, we Suit you with the our Team of Doctors.</p>
+                    <a href="#packages">Learn More ›</a>
+                </div>
+            </div>
+
+
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="../images/weightTraining.jpg" alt="Personal Trainers" />
+                <div class="card_info">
+                    <p>Train with world-renowned fitness coaches. </p>
+
+                    <a href="#strength_training">Learn More › </a>
+                </div>
+            </div>
+
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="../images/marathon2.jpg" alt="Marathon Runner" />
+                <div class="card_info">
+                    <p>Training for a marathon? We got you covered! </p>
+                    <a href="#marathon">Learn More ›</a>
+
+                </div>
+            </div>
+
+            <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="../images/physicalTherapist.jpg" alt="Physical Therapist" />
+                <div class="card_info">
+                    <p>Injured?? Physical Therapists are here to help you back to recovery. </p>
+                    <a href="#physical_therapy">Learn More ›</a>
+                </div>
+            </div>
+
+            <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="../images/jt3.jpg" alt="JT selection" />
+
+            
+                <div class="package_grid">
+                    <!--<p>Our Suit of Programs Tailored to your Health Needs</p>
+                    <a href="#packages">Learn More</a>-->
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+               
+            </div>
+
+            <label for="carousel-5" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-4" class="carousel-control next control-3">›</label>
+
+            <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+            <label for="carousel-5" class="carousel-control next control-4">›</label>
+            <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+            <label for="carousel-1" class="carousel-control next control-5">›</label>
+
+            <ol class="carousel-indicators">
+                <li><label for="carousel-1" class="carousel-bullet">•</label></li>
+                <li><label for="carousel-2" class="carousel-bullet">•</label></li>
+                <li><label for="carousel-3" class="carousel-bullet">•</label></li>
+                <li><label for="carousel-4" class="carousel-bullet">•</label></li>
+                <li><label for="carousel-5" class="carousel-bullet">•</label></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2 id="packages">"Solutions that Suit your Health Needs"</h2>
+        <div class="left_column">
+
+
+            <!--https://www.w3schools.com/howto/howto_css_clearfix.asp-->
+            <div class="card_left">
+                <h3 id="strength_training">Strength Training</h3>
+
+                <img src="../images/weights4.png" alt="weights" />
+                <p>
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                    This is a description. This is a description. This is a description. This is a description.
+                </p>
+             
+
+            </div>
+
+            <div class="card_right">
+               
+                    <h3>Weight Loss</h3>
+                    <img src="../images/weightLoss.jpg" alt="weight loss" />
+                    <p>
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                    </p>
+             
+
+            </div>
+           
+                <div class="card_left">
+                    <h3 id="physical_therapy">Physical Therapy</h3>
+                    <img src="../images/physicaltherapy2.png" alt="physical therapy" />
+                    <p>
+                       This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description. 
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description. 
+                    </p>
+                </div>
+
+           
+
+            <div class="card_right">
+                
+                    <h3 id="marathon">Train for a Marathon</h3>
+                    <img src="../images/marathon1.png" alt="marathon" />
+                    <p>
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                    </p>
+             
+                   
+                </div>
+            </div>
+       
+            <div class="right_column">
+                <h3>Mission</h3>
+                <div class="card_one">
+                    <p>
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                        This is a description. This is a description. This is a description. This is a description.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+       
+
+    <!-- TODO: Place Javascript Files here  -->
+        <script src="../js/HomePage.js" ></script>
+    </body>
+</html>
