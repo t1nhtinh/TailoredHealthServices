@@ -37,7 +37,6 @@ function selectPage(){
 
    var form = document.getElementById("page_select"); //get the form tag
    var accountType = document.getElementById("account_type").value;
-   alert(accountType);
 
    if(accountType == 0){
         alert("Please select the account type");
